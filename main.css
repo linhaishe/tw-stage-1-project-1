@@ -7,14 +7,94 @@ body {
 .header {
     background: url('素材/starfield-banner.jpg ');
     position: fixed;
-    width: 95%;
+    width: 100%;
 }
 
 .header .logo-link {
-    padding: 10px;
+    padding: 0px;
 }
 
 .header .logo {
     width:110px;
     margin:11px;
+}
+
+#header {
+    width: 100%;
+    height: 124px;
+    background-color: red;
+}
+
+#contTopLeft,#contTopRight {
+    height: 616px;
+    width: 50%;
+    background-color: blue;
+    float: left;
+}
+
+#contTopRightLeft,#contTopRightRight{
+    height: 50%;
+    width: 50%;
+    background-color: antiquewhite;
+    float: left;
+}
+
+#contTopRightbottom{
+    height: 50%;
+    width: 100%;
+    float: left;
+    background-color:orange;
+}
+
+#contMiddle{
+    height: 303px;
+    width: 100%;
+    float: left;
+}
+
+#contMiddle_1{
+    height: 100%;
+    width: 20%;
+    background-color: brown;
+    float: left;
+}
+#contMiddle_2{
+    height: 100%;
+    width: 60%;
+    background-color:red;
+    float: left;
+}
+
+#contMiddle_3{
+    height: 100%;
+    width: 20%;
+    background-color: brown;
+    float: right;
+}
+
+#contBottom{
+    height: 357px;
+    width: 100%;
+    float: left;
+}
+
+#contBottom_1,#contBottom_2,#contBottom_3,#contBottom_4{
+    height: 316px;
+    width: 25%;
+    float: left;
+    background-color: chartreuse;
+}
+
+#contBottom_5{
+    height: 41px;
+    width: 100%;
+    float: left;
+    background-color: cyan;
+}
+
+#footer{
+    height: 179px;
+    width: 100%;
+    background-color: beige;
+    float: left;
 }
