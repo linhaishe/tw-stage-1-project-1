@@ -2,8 +2,9 @@ body {
     background-color: black;
     width: 95%;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+/*
 .header {
     background: url('素材/starfield-banner.jpg ');
     position: fixed;
@@ -18,11 +19,18 @@ body {
     width:110px;
     margin:11px;
 }
-
+*/
 #header {
+    position: fixed;
     width: 100%;
     height: 124px;
-    background-image: url(images\starfield-banner.jpg);
+    background-image: url('images/starfield-banner.jpg');
+}
+
+#nasalogo{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 #contTopLeft,#contTopRight {
@@ -98,42 +106,176 @@ body {
     background-color: beige;
     float: left;
 }
-
+/*最后一个竖杠未能消失*/
 .dropbtn{
-    background-color: blue;
+    background-color: transparent;
     display: inline-block;
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    padding: 14px;
+    font-size: 20px;
     cursor: pointer;
+    border: none;
+    border-right: 1px solid white;
+}
+/*？？？？最后一个竖杠未能消失*/
+.dropbtn:last-child{
+    border-right: none; 
 }
 
 .dropdown{
     position: relative;
     display: inline-block;
+    float: left;
+    margin-top: 10px;
 }
 
+#menu{
+    margin-left: 280px;
+}
+
+#menu2{
+    clear: both;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 0;
+}
+
+/*？如何设置下拉菜单内容宽度随内容改变？*/
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: lightblue;
-    min-width: 160px;
+    /*font-size: 15px;*/
+    /*min-width: 160px;*/
+    background-color: rgb(43, 86, 226);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*width: 100%;*/    
 }
 
 .dropdown-content a{
-    color: black;
-    padding: 12px 16px;
+    color: white;
     text-decoration: none;
     display: block;
+    /*padding: 12px 16px;*/
 }
 
-.dropdown-content a:hover {background-color: cadetblue}
+.dropdown-content a:hover {background-color: lightblue}
 
 .dropdown:hover .dropdown-content{
     display: block;
 }
 .dropdown:hover .dropbtn{
-    background-color: blueviolet;
+    background-color: rgb(43, 86, 226);
 }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    width: 1000px;
+    height: 20px;
+    /*background-color: grey;*/
+    border: 1px solid red;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    float: left;
+    border-right: 1px solid white;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a{
+    display: block;
+    /*font-weight: bold;*/
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    height: 10px;
+    /*border: 1px solid red;*/
+}
+
+a:link,a:visited{
+    background-color: grey;
+}
+
+a:hover,a:active{
+    background-color: purple;
+}
+
+/*搜索框样式设置*/
+.search-container{
+    margin-top: 10px;
+    margin-right: 150px;
+    float: right;
+    border: 1px sold red;
+    /*图标可以被放置在input的上面*/
+}
+
+#menu{
+    position: relative;
+}
+
+.search-container .icon{
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: red;
+    /* placeholder字体大小  */
+    /*font-size: 12px;*/
+    font-size: bold;
+ }
+
+#menu input[type=text]{
+    float: right;
+    width: 110px;
+    height: 35px;
+    /*设置能够覆盖图标的宽高*/
+    background-color: grey;
+    /*opacity: 0.5;*/
+    padding: 6px;
+    margin-top: 3px;
+    font-size: 17px;
+    border: none;
+    color: white;/*搜索栏竖条颜色*/
+    padding-left: 45px;/*给图标腾位置*/
+    /*
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    */
+}
+
+.search-container button{
+    position: absolute;
+    float: right;
+    padding: 6px;
+    margin-top: 13px;
+    margin-left: 120px;
+    background: transparent;
+    font-size: 17px;
+    border: none;
+    cursor: pointer; 
+}
+
+.sharebtn{
+    float: right;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 1020px;
+}
+/*
+.sharebtn .share{
+    background-color: transparent;
+    color: white;
+    height: 20px;
+}
+*/
