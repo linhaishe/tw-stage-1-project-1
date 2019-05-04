@@ -32,26 +32,106 @@ body {
     margin-left: 30px;
     margin-top: 20px;
 }
-
+/*第一行左一图片宽高设置*/
 #contTopLeft,#contTopRight {
+    position: relative;
     height: 616px;
     width: 50%;
-    background-color: blue;
+    /*background-color: blue;*/
     float: left;
+    z-index: -1;
+}
+/*图片设置*/
+#contTopLeft{
+    background: url(images/pia21924-16.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*注释设置*/
+#contTopLeft .remarkblue,#contTopLeft .remarkwhite{
+    position: absolute;
+    height: 34px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+#contTopLeft .remarkblue{
+    margin-top: 548px;
+    background-color: rgb(143, 195, 229);
+}
+
+#contTopLeft .remarkwhite{
+    /*margin: 0 auto;*/
+    width: 100%;
+    bottom:0;
+    background-color: white;
 }
 
 #contTopRightLeft,#contTopRightRight{
-    height: 50%;
+    height: 70%;
     width: 50%;
-    background-color: antiquewhite;
     float: left;
 }
 
+/*右1图片设置*/
+#contTopRightLeft{
+    position: relative;
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*注释设置*/
+#contTopRightLeft .remarkblue,#contTopRightLeft .remarkwhite{
+    position: absolute;
+    height: 34px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+#contTopRightLeft .remarkblue{
+    margin-top: 369px;
+    background-color: rgb(143, 195, 229);
+}
+
+#contTopRightLeft .remarkwhite{
+    /*margin: 0 auto;*/
+    width: 100%;
+    bottom:0;
+    background-color: white;
+}
+
+#contTopRightRight{
+    background-color:rgb(143, 195, 229);
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    z-index: -1;
+}
+
+#contTopRightRight p{
+    margin-top: 350px;
+    color: red;
+}
+
 #contTopRightbottom{
-    height: 50%;
+    position: relative;
+    height: 30%;
     width: 100%;
     float: left;
-    background-color:orange;
+    background: url(images/s69-39961.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contTopRightbottom .remarkwhite{
+    position: absolute;
+    height: 34px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    width: 100%;
+    bottom:0;
+    background-color: white;
+    
 }
 
 #contMiddle{
@@ -106,7 +186,7 @@ body {
     background-color: beige;
     float: left;
 }
-/*最后一个竖杠未能消失*/
+/*下拉菜单设置*/
 .dropbtn{
     background-color: transparent;
     display: inline-block;
@@ -292,3 +372,5 @@ input::-webkit-input-placeholder {
     height: 20px;
 }
 */
+
+
