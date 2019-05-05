@@ -32,6 +32,192 @@ body {
     margin-left: 30px;
     margin-top: 20px;
 }
+/*下拉菜单设置*/
+.dropbtn{
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    padding: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-right: 1px solid white;
+}
+/*？？？？最后一个竖杠未能消失*/
+.dropbtn:last-child{
+    border-right: none; 
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+
+#menu{
+    margin-left: 280px;
+}
+
+/*？如何设置下拉菜单内容宽度随内容改变？*/
+.dropdown-content{
+    display: none;
+    position: absolute;
+    /*font-size: 15px;*/
+    /*min-width: 160px;*/
+    background-color: rgb(43, 86, 226);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*width: 100%;*/    
+}
+
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    /*padding: 12px 16px;*/
+}
+
+.dropdown-content a:hover {background-color: lightblue}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: rgb(43, 86, 226);
+}
+
+#menu2{
+    clear: both;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 0;
+    z-index: -1;
+    /*width:fit-content;*/   
+    /*父元素宽度设置fit-content,高度是没有这样的写法的*/
+    /*margin:0 auto;*/   
+    /*注意只设置得了水平居中,此方法,垂直居中无法*/
+    /*border: 1px solid red;*/
+    /*height: 40px;
+    width: 1000px;*/
+
+}
+
+#menu2 ul{
+    list-style-type: none;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    /*width: 960px;*/
+    /*height: 40px;*/
+    background-color: grey;
+    /*border: 1px solid red;*/
+    text-align: center;
+    z-index: -1;
+}
+
+#menu2 li{
+    display: inline-block;
+    /*float: left;*/
+    border-right: 1px solid white;
+}
+
+#menu2 li:last-child {
+    border-right: none;
+}
+
+.menu2 li a{
+    display: block;
+    /*font-weight: bold;*/
+    font-size: 5px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    height: auto;
+    /*border: 1px solid red;*/
+    /*margin: 10px;*/
+}
+
+.menu2 a:link,a:visited{
+    background-color: grey;
+}
+
+.menu2 a:hover,a:active{
+    background-color: purple;
+}
+
+/*搜索框样式设置*/
+.search-container{
+    margin-top: 10px;
+    margin-right: 150px;
+    float: right;
+    border: 1px sold red;
+    /*图标可以被放置在input的上面*/
+}
+
+#menu{
+    position: relative;
+}
+
+.search-container .icon{
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: white;
+    /* placeholder字体大小  */
+    /*font-size: 12px;*/
+    font-size: bold;
+ }
+
+#menu input[type=text]{
+    float: right;
+    width: 110px;
+    height: 25px;
+    /*设置能够覆盖图标的宽高*/
+    background-color: grey;
+    /*opacity: 0.5;*/
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: none;
+    color: white;/*搜索栏竖条颜色*/
+    padding-left: 45px;/*给图标腾位置*/
+    /*
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    */
+}
+
+.search-container button{
+    position: absolute;
+    float: right;
+    padding: 6px;
+    margin-top: 13px;
+    margin-left: 120px;
+    background: transparent;
+    font-size: 17px;
+    border: none;
+    cursor: pointer; 
+}
+
+.sharebtn{
+    float: right;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 1020px;
+    background: transparent;
+}
+/*
+.sharebtn .share{
+    background-color: transparent;
+    color: white;
+    height: 20px;
+}
+*/
+
 /*第一行左一图片宽高设置*/
 #contTopLeft,#contTopRight {
     position: relative;
@@ -135,6 +321,7 @@ body {
 }
 
 #contMiddle{
+    position: relative;
     height: 303px;
     width: 100%;
     float: left;
@@ -142,25 +329,65 @@ body {
 
 #contMiddle_1{
     height: 100%;
-    width: 20%;
-    background-color: brown;
+    width: 30%;
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     float: left;
 }
+
 #contMiddle_2{
     height: 100%;
-    width: 60%;
-    background-color:red;
+    width: 40%;
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     float: left;
 }
 
 #contMiddle_3{
     height: 100%;
-    width: 20%;
-    background-color: brown;
+    width: 30%;
     float: right;
 }
 
+#contMiddle_3 video{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+/*middle注释设置*/
+#contMiddle .remarkblue,#contMiddle .remarkwhite{
+    position: absolute;
+    height: 34px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+
+}
+
+#contMiddle_1 .remarkblue,#contMiddle_2 .remarkblue{
+    margin-top: 235px;
+    background-color: rgb(143, 195, 229);
+}
+
+#contMiddle_1 .remarkwhite,#contMiddle_2 .remarkwhite{
+    /*margin: 0 auto;*/
+    bottom:0;
+    background-color: white;
+}
+
+#contMiddle_1 .remarkwhite{
+    width: 30%;
+
+}
+
+#contMiddle_2 .remarkwhite{
+    width: 40%;
+}
+
 #contBottom{
+    position: relative;
     height: 357px;
     width: 100%;
     float: left;
@@ -170,207 +397,120 @@ body {
     height: 316px;
     width: 25%;
     float: left;
-    background-color: chartreuse;
 }
+
+#contBottom_1{
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contBottom_2{
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contBottom_3{
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contBottom_4{
+    background: url(images/mollweide_cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*底部图片上的注释设置*/
+#contBottom .remarkblue,#contBottom .remarkwhite{
+    position: absolute;
+    height: 34px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+
+}
+
+#contBottom .remarkblue{
+    margin-top: 250px;
+    background-color: rgb(143, 195, 229);
+}
+
+#contBottom .remarkwhite{
+    /*margin: 0 auto;*/
+    bottom:41px;
+    background-color: white;
+    width: 25%;
+}
+/*
+#contBottom .remarkwhite{
+    width: 30%;
+
+}
+
+#contMiddle_2 .remarkwhite{
+    width: 40%;
+}
+*/
 
 #contBottom_5{
     height: 41px;
     width: 100%;
     float: left;
-    background-color: cyan;
+    background-color: rgb(89, 192, 226);
+    text-align: center;
+    line-height: 41px;
+    color: white;
 }
 
 #footer{
+    /*position: relative;*/
     height: 179px;
     width: 100%;
-    background-color: beige;
     float: left;
 }
-/*下拉菜单设置*/
-.dropbtn{
-    background-color: transparent;
-    display: inline-block;
+.nasalogo{
+    float: left;
+}
+
+.text{
     color: white;
-    padding: 14px;
     font-size: 20px;
-    cursor: pointer;
-    border: none;
-    border-right: 1px solid white;
+    font-weight: bolder;
 }
-/*？？？？最后一个竖杠未能消失*/
-.dropbtn:last-child{
-    border-right: none; 
-}
-
-.dropdown{
-    position: relative;
-    display: inline-block;
-    float: left;
-    margin-top: 10px;
-}
-
-#menu{
-    margin-left: 280px;
-}
-
-/*？如何设置下拉菜单内容宽度随内容改变？*/
-.dropdown-content{
-    display: none;
-    position: absolute;
-    /*font-size: 15px;*/
-    /*min-width: 160px;*/
-    background-color: rgb(43, 86, 226);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /*width: 100%;*/    
-}
-
-.dropdown-content a{
-    color: white;
-    text-decoration: none;
-    display: block;
-    /*padding: 12px 16px;*/
-}
-
-.dropdown-content a:hover {background-color: lightblue}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-.dropdown:hover .dropbtn{
-    background-color: rgb(43, 86, 226);
-}
-
-#menu2{
-    clear: both;
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 0;
-    z-index: -1;
-    /*width:fit-content;*/   
-    /*父元素宽度设置fit-content,高度是没有这样的写法的*/
-    /*margin:0 auto;*/   
-    /*注意只设置得了水平居中,此方法,垂直居中无法*/
-    /*border: 1px solid red;*/
-    /*height: 40px;
-    width: 1000px;*/
-
-}
-
-ul{
+.footernavibar ul{
+    /*position: absolute;*/
     list-style-type: none;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    /*width: 960px;*/
-    /*height: 40px;*/
-    background-color: grey;
-    /*border: 1px solid red;*/
+    /*margin: 0;*/
+    float: right;
+    /*padding: 90px;*/
+    background-color: transparent;
     text-align: center;
-    z-index: -1;
+    /*bottom: 0;*/
+    margin-top: 20px;
 }
-
-li{
+.footernavibar li{
     display: inline-block;
-    /*float: left;*/
-    border-right: 1px solid white;
+    color: blue;
 }
 
-li:last-child {
-    border-right: none;
-}
-
-
-.menu2 li a{
+.footernavibar li a{
     display: block;
     /*font-weight: bold;*/
-    font-size: 5px;
+    font-size: 15px;
     text-align: center;
-    padding: 5px;
+    padding: 25px;
     text-decoration: none;
-    color: white;
+    /*color: white;*/
     height: auto;
     /*border: 1px solid red;*/
     /*margin: 10px;*/
 }
 
-.menu2 a:link,a:visited{
-    background-color: grey;
-}
-
-.menu2 a:hover,a:active{
-    background-color: purple;
-}
-
-/*搜索框样式设置*/
-.search-container{
-    margin-top: 10px;
-    margin-right: 150px;
-    float: right;
-    border: 1px sold red;
-    /*图标可以被放置在input的上面*/
-}
-
-#menu{
-    position: relative;
-}
-
-.search-container .icon{
-    color: white;
-}
-
-input::-webkit-input-placeholder {
-    /* placeholder颜色  */
-    color: white;
-    /* placeholder字体大小  */
-    /*font-size: 12px;*/
-    font-size: bold;
- }
-
-#menu input[type=text]{
-    float: right;
-    width: 110px;
-    height: 25px;
-    /*设置能够覆盖图标的宽高*/
-    background-color: grey;
-    /*opacity: 0.5;*/
-    padding: 6px;
-    margin-top: 10px;
-    font-size: 17px;
-    border: none;
-    color: white;/*搜索栏竖条颜色*/
-    padding-left: 45px;/*给图标腾位置*/
-    /*
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    */
-}
-
-.search-container button{
-    position: absolute;
-    float: right;
-    padding: 6px;
-    margin-top: 13px;
-    margin-left: 120px;
-    background: transparent;
-    font-size: 17px;
-    border: none;
-    cursor: pointer; 
-}
-
-.sharebtn{
-    float: right;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 1020px;
-    background: transparent;
-}
-/*
-.sharebtn .share{
+.footernavibar a:link,a:visited{
     background-color: transparent;
-    color: white;
-    height: 20px;
+    color: blue;
 }
-*/
 
+.footernavibar a:hover,a:active{
+    text-decoration: underline;
+}
 
