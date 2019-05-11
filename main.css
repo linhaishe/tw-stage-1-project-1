@@ -20,6 +20,10 @@ body {
     margin:11px;
 }
 */
+/*背景音乐的控件被遮挡*/
+embed{
+    float: right;
+}
 #header {
     position: fixed;
     width: 100%;
