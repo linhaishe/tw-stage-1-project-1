@@ -20,10 +20,13 @@ body {
     margin:11px;
 }
 */
-/*背景音乐的控件被遮挡*/
+/*背景音乐的控件被遮挡,占位把分局打乱了？？？？？？？？？？？？*/
+
 embed{
     float: right;
+    display: inline-block;
 }
+
 #header {
     position: fixed;
     width: 100%;
@@ -48,7 +51,7 @@ embed{
     border: none;
     border-right: 1px solid white;
 }
-/*？？？？最后一个竖杠未能消失*/
+/*？？？？最后一个竖杠未能消失???????????????????*/
 .dropbtn:last-child{
     border-right: none; 
 }
@@ -64,7 +67,7 @@ embed{
     margin-left: 280px;
 }
 
-/*？如何设置下拉菜单内容宽度随内容改变？*/
+/*？如何设置下拉菜单内容宽度随内容改变？????????????????*/
 .dropdown-content{
     display: none;
     position: absolute;
