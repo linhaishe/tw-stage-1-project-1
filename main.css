@@ -1,8 +1,8 @@
 body {
-    background-color: black;
-    width: 95%;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  width: 95%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*
 .header {
@@ -23,207 +23,210 @@ body {
 
 /*背景音乐的控件被遮挡,占位把分局打乱了？？？？？？？？？？？？*/
 
-embed{
-    float: right;
-    display: inline-block;
-    z-index: 1;
+embed {
+  float: right;
+  display: inline-block;
+  z-index: 1;
 }
 
 #header {
-    position: fixed;
-    width: 100%;
-    height: 124px;
-    background-image: url('images/starfield-banner.jpg');
-    z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 124px;
+  background-image: url("images/starfield-banner.jpg");
+  z-index: 1;
 }
 
-#nasalogo{
-    float: left;
-    margin-left: 30px;
-    margin-top: 20px;
+#nasalogo {
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 /*下拉菜单设置*/
-.dropbtn{
-    background-color: transparent;
-    display: inline-block;
-    color: white;
-    padding: 14px;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    border-right: 1px solid white;
+.dropbtn {
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  padding: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-right: 1px solid white;
 }
 /*？？？？最后一个竖杠未能消失???????????????????*/
-.dropdown-content:last-child{
-    border-right: none; 
+.dropdown-content:last-child {
+  border-right: none;
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
-    float: left;
-    margin-top: 10px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
 }
 
-#menu{
-    margin-left: 280px;
+#menu {
+  margin-left: 280px;
 }
 
 /*？如何设置下拉菜单内容宽度随内容改变？????????????????*/
-.dropdown-content{
-    display: none;
-    position: absolute;
-    /*font-size: 15px;*/
-    /*min-width: 160px;*/
-    background-color: rgb(43, 86, 226);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /*width: 100%;*/    
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /*font-size: 15px;*/
+  /*min-width: 160px;*/
+  background-color: rgb(43, 86, 226);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /*width: 100%;*/
 }
 
-.dropdown-content a{
-    color: white;
-    text-decoration: none;
-    display: block;
-    /*padding: 12px 16px;*/
-    width: 200px;
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  /*padding: 12px 16px;*/
+  width: 200px;
 }
 
-.dropdown-content a:hover {background-color: lightblue}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-.dropdown:hover .dropbtn{
-    background-color: rgb(43, 86, 226);
+.dropdown-content a:hover {
+  background-color: lightblue;
 }
 
-#menu2{
-    clear: both;
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 0;
-    z-index: -1;
-    /*width:fit-content;*/   
-    /*父元素宽度设置fit-content,高度是没有这样的写法的*/
-    /*margin:0 auto;*/   
-    /*注意只设置得了水平居中,此方法,垂直居中无法*/
-    /*border: 1px solid red;*/
-    /*height: 40px;
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: rgb(43, 86, 226);
+}
+
+#menu2 {
+  clear: both;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 0;
+  z-index: -1;
+  /*width:fit-content;*/
+  /*父元素宽度设置fit-content,高度是没有这样的写法的*/
+  /*margin:0 auto;*/
+  /*注意只设置得了水平居中,此方法,垂直居中无法*/
+  /*border: 1px solid red;*/
+  /*height: 40px;
     width: 1000px;*/
-
 }
 
-#menu2 ul{
-    list-style-type: none;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    /*width: 960px;*/
-    /*height: 40px;*/
-    background-color: grey;
-    /*border: 1px solid red;*/
-    text-align: center;
-    z-index: -1;
+#menu2 ul {
+  list-style-type: none;
+  margin: 0;
+  float: left;
+  padding: 10px;
+  /*width: 960px;*/
+  /*height: 40px;*/
+  background-color: grey;
+  /*border: 1px solid red;*/
+  text-align: center;
+  z-index: -1;
 }
 
-#menu2 li{
-    display: inline-block;
-    /*float: left;*/
-    border-right: 1px solid white;
+#menu2 li {
+  display: inline-block;
+  /*float: left;*/
+  border-right: 1px solid white;
 }
 
 #menu2 li:last-child {
-    border-right: none;
+  border-right: none;
 }
 
-.menu2 li a{
-    display: block;
-    /*font-weight: bold;*/
-    font-size: 5px;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    height: auto;
-    /*border: 1px solid red;*/
-    /*margin: 10px;*/
+.menu2 li a {
+  display: block;
+  /*font-weight: bold;*/
+  font-size: 5px;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  height: auto;
+  /*border: 1px solid red;*/
+  /*margin: 10px;*/
 }
 
-.menu2 a:link,a:visited{
-    background-color: grey;
+.menu2 a:link,
+a:visited {
+  background-color: grey;
 }
 
-.menu2 a:hover,a:active{
-    background-color: purple;
+.menu2 a:hover,
+a:active {
+  background-color: purple;
 }
 
 /*搜索框样式设置*/
-.search-container{
-    margin-top: 10px;
-    margin-right: 150px;
-    float: right;
-    border: 1px sold red;
-    /*图标可以被放置在input的上面*/
+.search-container {
+  margin-top: 10px;
+  margin-right: 150px;
+  float: right;
+  border: 1px sold red;
+  /*图标可以被放置在input的上面*/
 }
 
-#menu{
-    position: relative;
+#menu {
+  position: relative;
 }
 
-.search-container .icon{
-    color: white;
+.search-container .icon {
+  color: white;
 }
 
 input::-webkit-input-placeholder {
-    /* placeholder颜色  */
-    color: white;
-    /* placeholder字体大小  */
-    /*font-size: 12px;*/
-    font-size: bold;
- }
+  /* placeholder颜色  */
+  color: white;
+  /* placeholder字体大小  */
+  /*font-size: 12px;*/
+  font-size: bold;
+}
 
-#menu input[type=text]{
-    float: right;
-    width: 110px;
-    height: 25px;
-    /*设置能够覆盖图标的宽高*/
-    background-color: grey;
-    /*opacity: 0.5;*/
-    padding: 6px;
-    margin-top: 10px;
-    font-size: 17px;
-    border: none;
-    color: white;/*搜索栏竖条颜色*/
-    padding-left: 45px;/*给图标腾位置*/
-    /*
+#menu input[type="text"] {
+  float: right;
+  width: 110px;
+  height: 25px;
+  /*设置能够覆盖图标的宽高*/
+  background-color: grey;
+  /*opacity: 0.5;*/
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 17px;
+  border: none;
+  color: white; /*搜索栏竖条颜色*/
+  padding-left: 45px; /*给图标腾位置*/
+  /*
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     */
 }
 
-.search-container button{
-    position: absolute;
-    float: right;
-    padding: 6px;
-    margin-top: 13px;
-    margin-left: 120px;
-    background: transparent;
-    font-size: 17px;
-    border: none;
-    cursor: pointer; 
+.search-container button {
+  position: absolute;
+  float: right;
+  padding: 6px;
+  margin-top: 13px;
+  margin-left: 120px;
+  background: transparent;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
 }
 
-.sharebtn{
-    float: right;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    /*border: 1px solid red;*/
-    margin-top: 23px;
-    margin-left: 1010px;
-    background: url(images/share.svg);
-    /*background: transparent;*/
+.sharebtn {
+  float: right;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  /*border: 1px solid red;*/
+  margin-top: 23px;
+  margin-left: 1010px;
+  background: url(images/share.svg);
+  /*background: transparent;*/
 }
 /*
 .sharebtn .share{
@@ -232,11 +235,12 @@ input::-webkit-input-placeholder {
     height: 20px;
 }
 */
-#contTop{
-    position: relative;
+#contTop {
+  position: relative;
 }
-#contTopLeft,#contTopRight{
-    margin-bottom: 20px;
+#contTopLeft,
+#contTopRight {
+  margin-bottom: 20px;
 }
 /*
 #contTopRightLeft,#contTopRightRight{
@@ -244,250 +248,257 @@ input::-webkit-input-placeholder {
 }
 */
 
-#contTopRightLeft{
-    margin-right: 2.5px;
+#contTopRightLeft {
+  margin-right: 2.5px;
 }
 
-#contTopRightRight{
-    margin-left: 37px;
+#contTopRightRight {
+  margin-left: 37px;
 }
-
 
 /*第一行左一图片宽高设置*/
-#contTopLeft,#contTopRight {
-    position: relative;
-    height: 630px;
-    width: 49%;
-    /*background-color: blue;*/
-    float: left;
-    z-index: -1;
+#contTopLeft,
+#contTopRight {
+  position: relative;
+  height: 630px;
+  width: 49%;
+  /*background-color: blue;*/
+  float: left;
+  z-index: -1;
 }
-#contTopRight{
-    float: right;
+#contTopRight {
+  float: right;
 }
 /*图片设置*/
-#contTopLeft{
-    background: url(images/pia21924-16.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+#contTopLeft {
+  background: url(images/pia21924-16.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 /*注释设置*/
-#contTopLeft .remarkblue,#contTopLeft .remarkwhite{
-    position: absolute;
-    max-height: 100px;
-    opacity: 0.7;
-    filter:alpha(opacity=70);
+#contTopLeft .remarkblue,
+#contTopLeft .remarkwhite {
+  position: absolute;
+  max-height: 100px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
-#contTopLeft .remarkblue{
-    margin-top: 562px;
-    background-color: rgb(143, 195, 229);
+#contTopLeft .remarkblue {
+  margin-top: 562px;
+  background-color: rgb(143, 195, 229);
 }
 
-#contTopLeft .remarkwhite{
-    /*margin: 0 auto;*/
-    width: 100%;
-    bottom:0;
-    background-color: white;
+#contTopLeft .remarkwhite {
+  /*margin: 0 auto;*/
+  width: 100%;
+  bottom: 0;
+  background-color: white;
 }
 
-#contTopRightLeft,#contTopRightRight{
-    height: 67%;
-    width: 47%;
-    float: left;
+#contTopRightLeft,
+#contTopRightRight {
+  height: 67%;
+  width: 47%;
+  float: left;
 }
 
 /*右1图片设置*/
-#contTopRightLeft{
-    position: relative;
-    background: url(images/mollweide_cycle.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#contTopRightLeft {
+  position: relative;
+  background: url(images/mollweide_cycle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*注释设置*/
-#contTopRightLeft .remarkblue,#contTopRightLeft .remarkwhite{
-    position: absolute;
-    height: 34px;
-    opacity: 0.7;
-    filter:alpha(opacity=70);
+#contTopRightLeft .remarkblue,
+#contTopRightLeft .remarkwhite {
+  position: absolute;
+  height: 34px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
-#contTopRightLeft .remarkblue{
-    margin-top: 360px;
-    background-color: rgb(143, 195, 229);
+#contTopRightLeft .remarkblue {
+  margin-top: 360px;
+  background-color: rgb(143, 195, 229);
 }
 
-#contTopRightLeft .remarkwhite{
-    /*margin: 0 auto;*/
-    width: 100%;
-    bottom:0;
-    background-color: white;
+#contTopRightLeft .remarkwhite {
+  /*margin: 0 auto;*/
+  width: 100%;
+  bottom: 0;
+  background-color: white;
 }
 
-#contTopRightRight{
-    background-color:rgb(143, 195, 229);
-    opacity: 0.5;
-    filter:alpha(opacity=50);
-    z-index: -1;
+#contTopRightRight {
+  background-color: rgb(143, 195, 229);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: -1;
 }
 
-#contTopRightRight p{
-    margin-top: 350px;
-    color: red;
+#contTopRightRight p {
+  margin-top: 350px;
+  color: red;
 }
 
-#contTopRightbottom{
-    position: absolute;
-    height: 30%;
-    width: 100%;
-    bottom: 0;
-    /*float: left;*/
-    background: url(images/s69-39961.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#contTopRightbottom {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  /*float: left;*/
+  background: url(images/s69-39961.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#contTopRightbottom .remarkwhite{
-    position: absolute;
-    height: 34px;
-    opacity: 0.7;
-    filter:alpha(opacity=70);
-    width: 100%;
-    bottom:0;
-    background-color: white;
-    
+#contTopRightbottom .remarkwhite {
+  position: absolute;
+  height: 34px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  width: 100%;
+  bottom: 0;
+  background-color: white;
 }
 
-#contMiddle{
-    position: relative;
-    height: 303px;
-    width: 100%;
-    float: left;
-    margin-bottom: 20px;
+#contMiddle {
+  position: relative;
+  height: 303px;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
 }
 
-#contMiddle_1{
-    height: 100%;
-    width: 30%;
-    background: url(images/ssc2017-14a1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
+#contMiddle_1 {
+  height: 100%;
+  width: 30%;
+  background: url(images/ssc2017-14a1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
 }
 
-#contMiddle_2{
-    height: 100%;
-    width: 40%;
-    margin-left: 15px;
-    margin-right: 5px;
-    background: url(images/pia22556-16.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
+#contMiddle_2 {
+  height: 100%;
+  width: 40%;
+  margin-left: 15px;
+  margin-right: 5px;
+  background: url(images/pia22556-16.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
 }
 
-#contMiddle_3{
-    height: 100%;
-    width: 27.5%;
-    float: right;
+#contMiddle_3 {
+  height: 100%;
+  width: 27.5%;
+  float: right;
 }
 
-#contMiddle_3 video{
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
+#contMiddle_3 video {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 /*middle注释设置*/
-#contMiddle .remarkblue,#contMiddle .remarkwhite{
-    position: absolute;
-    height: 34px;
-    opacity: 0.7;
-    filter:alpha(opacity=70);
-
+#contMiddle .remarkblue,
+#contMiddle .remarkwhite {
+  position: absolute;
+  height: 34px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
-#contMiddle_1 .remarkblue,#contMiddle_2 .remarkblue{
-    margin-top: 235px;
-    background-color: rgb(143, 195, 229);
+#contMiddle_1 .remarkblue,
+#contMiddle_2 .remarkblue {
+  margin-top: 235px;
+  background-color: rgb(143, 195, 229);
 }
 
-#contMiddle_1 .remarkwhite,#contMiddle_2 .remarkwhite{
-    /*margin: 0 auto;*/
-    bottom:0;
-    background-color: white;
+#contMiddle_1 .remarkwhite,
+#contMiddle_2 .remarkwhite {
+  /*margin: 0 auto;*/
+  bottom: 0;
+  background-color: white;
 }
 
-#contMiddle_1 .remarkwhite{
-    width: 30%;
-
+#contMiddle_1 .remarkwhite {
+  width: 30%;
 }
 
-#contMiddle_2 .remarkwhite{
-    width: 40%;
+#contMiddle_2 .remarkwhite {
+  width: 40%;
 }
 
-#contBottom{
-    position: relative;
-    height: 357px;
-    width: 100%;
-    float: left;
-    margin-bottom: 35px;
+#contBottom {
+  position: relative;
+  height: 357px;
+  width: 100%;
+  float: left;
+  margin-bottom: 35px;
 }
 
-#contBottom_1,#contBottom_2,#contBottom_3,#contBottom_4{
-    height: 316px;
-    width: 24%;
-    float: left;
+#contBottom_1,
+#contBottom_2,
+#contBottom_3,
+#contBottom_4 {
+  height: 316px;
+  width: 24%;
+  float: left;
 }
 
-#contBottom_1{
-    background: url(images/nasa_logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+#contBottom_1 {
+  background: url(images/nasa_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#contBottom_2{
-    background: url(images/io-home.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 15px;
+#contBottom_2 {
+  background: url(images/io-home.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
 }
-#contBottom_3{
-    background: url(images/cassini20170809.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 15px;
+#contBottom_3 {
+  background: url(images/cassini20170809.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
 }
-#contBottom_4{
-    background: url(images/fermiicecube_as.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 15px;
+#contBottom_4 {
+  background: url(images/fermiicecube_as.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
 }
 
-#contBottom_5{
-    margin-top: 15px;
+#contBottom_5 {
+  margin-top: 15px;
 }
 
 /*底部图片上的注释设置*/
-#contBottom .remarkblue,#contBottom .remarkwhite{
-    position: absolute;
-    height: 34px;
-    opacity: 0.7;
-    filter:alpha(opacity=70);
+#contBottom .remarkblue,
+#contBottom .remarkwhite {
+  position: absolute;
+  height: 34px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
-#contBottom .remarkblue{
-    margin-top: 249px;
-    background-color: rgb(143, 195, 229);
+#contBottom .remarkblue {
+  margin-top: 249px;
+  background-color: rgb(143, 195, 229);
 }
 
-#contBottom .remarkwhite{
-    /*margin: 0 auto;*/
-    bottom:41px;
-    background-color: white;
-    width: 24%;
+#contBottom .remarkwhite {
+  /*margin: 0 auto;*/
+  bottom: 41px;
+  background-color: white;
+  width: 24%;
 }
 /*
 #contBottom .remarkwhite{
@@ -500,66 +511,67 @@ input::-webkit-input-placeholder {
 }
 */
 
-#contBottom_5{
-    height: 41px;
-    width: 100%;
-    float: left;
-    background-color: rgb(89, 192, 226);
-    text-align: center;
-    line-height: 41px;
-    color: white;
+#contBottom_5 {
+  height: 41px;
+  width: 100%;
+  float: left;
+  background-color: rgb(89, 192, 226);
+  text-align: center;
+  line-height: 41px;
+  color: white;
 }
 
-#footer{
-    /*position: relative;*/
-    height: 179px;
-    width: 100%;
-    float: left;
+#footer {
+  /*position: relative;*/
+  height: 179px;
+  width: 100%;
+  float: left;
 }
-.nasalogo{
-    float: left;
-}
-
-.text{
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-}
-.footernavibar ul{
-    /*position: absolute;*/
-    list-style-type: none;
-    /*margin: 0;*/
-    float: right;
-    /*padding: 90px;*/
-    background-color: transparent;
-    text-align: center;
-    /*bottom: 0;*/
-    margin-top: 20px;
-}
-.footernavibar li{
-    display: inline-block;
-    color: blue;
+.nasalogo {
+  float: left;
 }
 
-.footernavibar li a{
-    display: block;
-    /*font-weight: bold;*/
-    font-size: 15px;
-    text-align: center;
-    padding: 25px;
-    text-decoration: none;
-    /*color: white;*/
-    height: auto;
-    /*border: 1px solid red;*/
-    /*margin: 10px;*/
+.text {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.footernavibar ul {
+  /*position: absolute;*/
+  list-style-type: none;
+  /*margin: 0;*/
+  float: right;
+  /*padding: 90px;*/
+  background-color: transparent;
+  text-align: center;
+  /*bottom: 0;*/
+  margin-top: 20px;
+}
+.footernavibar li {
+  display: inline-block;
+  color: blue;
 }
 
-.footernavibar a:link,a:visited{
-    background-color: transparent;
-    color: blue;
+.footernavibar li a {
+  display: block;
+  /*font-weight: bold;*/
+  font-size: 15px;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  /*color: white;*/
+  height: auto;
+  /*border: 1px solid red;*/
+  /*margin: 10px;*/
 }
 
-.footernavibar a:hover,a:active{
-    text-decoration: underline;
+.footernavibar a:link,
+a:visited {
+  background-color: transparent;
+  color: blue;
 }
 
+.footernavibar a:hover,
+a:active {
+  text-decoration: underline;
+}
